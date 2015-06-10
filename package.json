@@ -1,5 +1,5 @@
 {
-  "name": "Reaumur.js",
+  "name": "reaumur",
   "version": "1.0.0",
   "description": "Conversion between units of temperature",
   "repository": {
