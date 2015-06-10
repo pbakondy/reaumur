@@ -1,5 +1,7 @@
 # Réaumur.js
 
+[![Build Status](https://travis-ci.org/pbakondy/reaumur.svg?branch=master)](https://travis-ci.org/pbakondy/reaumur)
+
 Conversion between units of temperature:
 
 - [Kelvin](http://en.wikipedia.org/wiki/Kelvin)
