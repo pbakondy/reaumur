@@ -1,0 +1,36 @@
+{
+  "name": "reaumur",
+  "description": "Conversion between units of temperature",
+  "version": "1.0.0",
+  "homepage": "https://github.com/pbakondy/reaumur",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pbakondy/reaumur.git"
+  },
+  "author": [
+    "Peter Bakondy <pbakondy@gmail.com>"
+  ],
+  "main": "dist/reaumur.min.js",
+  "ignore": [
+    "**/.*",
+    "gulpfile.js",
+    "src",
+    "test"
+  ],
+  "dependencies": {
+  },
+  "keywords": [
+    "conversion",
+    "temperature",
+    "scale",
+    "kelvin",
+    "celsius",
+    "fahrenheit",
+    "rankine",
+    "delisle",
+    "newton",
+    "reaumur",
+    "romer"
+  ],
+  "license": "MIT"
+}
