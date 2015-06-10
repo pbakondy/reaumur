@@ -30,11 +30,11 @@ npm install reaumur
 
 ## Usage
 
-You can use this library as a **node.js module**, an **AMD module** or called from the global scope ( **window.reaumur** ).
+You can use this library as a **node.js module**, an **AMD module** or called from the global scope with **window.reaumur**.
 
 The library starts with this initial value: 0 Kelvin.
 
-The calculated values are rounded to two digits.
+The calculated temperature values are rounded to two digits.
 
 The library methods are chainable.
 
