@@ -55,21 +55,21 @@ The library methods are chainable.
 
 0 Kelvin to Celsius
 
-```
+```js
 reaumur.from('K', 0).to('C').get()
 // { name: "Celsius", sign: "°C", value: -273.15 }
 ```
 
 0 Celsius to Kelvin
 
-```
+```js
 reaumur.from('C', 0).to('K').get().value
 // 273.15
 ```
 
 0 Celsius to Fahrenheit
 
-```
+```js
 reaumur.from('C', 0).to('F').get().value
 // 32
 ```
@@ -77,14 +77,14 @@ reaumur.from('C', 0).to('F').get().value
 
 35 Réaumur to Celsius ( [forrás](http://magyar-irodalom.elte.hu/ezredveg/0208-9/0208-93.html#rl) )
 
-```
+```js
 reaumur.from('Re', 35).to('C').get().value
 // 43.75
 ```
 
 0 Celsius to all
 
-```
+```js
 var all = reaumur.from('C', 0).toAll();
 all.K.get().value // 273.15
 all.F.get().value // 32
