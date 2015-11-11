@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var eslint = require('gulp-eslint');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var karma = require('gulp-karma');
+var Server = require('karma').Server;
 
 
 var paths = {
@@ -35,10 +35,10 @@ gulp.task('build', function () {
 
 
 gulp.task('test', function (done) {
-  karma.start({
+  new Server({
     configFile: __dirname + '/karma.conf.js',
     singleRun: true
-  }, done);
+  }, done).start();
 });
 
 
