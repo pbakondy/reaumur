@@ -10,14 +10,14 @@
   "license": "MIT",
   "homepage": "https://github.com/pbakondy/reaumur",
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-eslint": "^1.1.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
     "gulp-rename": "^1.2.2",
-    "gulp-uglify": "^1.2.0",
-    "jasmine-core": "^2.3.4",
-    "karma": "^0.13.18",
-    "karma-jasmine": "^0.3.5",
-    "karma-phantomjs-launcher": "^0.2.0",
-    "phantomjs": "^1.9.17"
+    "gulp-uglify": "^1.5.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.19",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.3",
+    "phantomjs": "^2.1.2"
   }
 }
