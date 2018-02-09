@@ -7,6 +7,7 @@ Conversion between units of temperature:
 - [Kelvin](http://en.wikipedia.org/wiki/Kelvin)
 - [Celsius](http://en.wikipedia.org/wiki/Celsius)
 - [Fahrenheit](http://en.wikipedia.org/wiki/Fahrenheit)
+- [Felsius](https://xkcd.com/1923/)
 - [Rankine](http://en.wikipedia.org/wiki/Rankine_scale)
 - [Delisle](http://en.wikipedia.org/wiki/Delisle_scale)
 - [Newton](http://en.wikipedia.org/wiki/Newton_scale)
@@ -41,7 +42,7 @@ The library methods are chainable.
 ### Methods
 
 - <code>reaumur.getScaleIDs()</code> - returns the available scale identifiers in an Array
-  - <code>[ 'K', 'C', 'F', 'R', 'D', 'N', 'Re', 'Ro' ]</code>
+  - <code>[ 'K', 'C', 'F', 'Fe', 'R', 'D', 'N', 'Re', 'Ro' ]</code>
 - <code>reaumur.get()</code> - returns an object with the details of the current state
   - <code>{ name: 'Kelvin', sign: 'K', value: 0 }</code>
 - <code>reaumur.from( &lt;scale&gt;, &lt;value&gt; )</code> - sets and initial scale and value, chainable

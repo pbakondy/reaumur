@@ -4,7 +4,9 @@
 // version 1.0.0
 
 (function(global) {
-  // http://en.wikipedia.org/wiki/Conversion_of_units_of_temperature
+  // https://en.wikipedia.org/wiki/Conversion_of_units_of_temperature
+  // https://www.explainxkcd.com/wiki/index.php/1923:_Felsius
+
   'use strict';
 
   var scales = {
@@ -16,6 +18,7 @@
         'K': function(x) { return x; },
         'C': function(x) { return x - 273.15; },
         'F': function(x) { return x * 9 / 5 - 459.67; },
+        'Fe': function(x) { return x * 11 / 4 - 366.41; },
         'R': function(x) { return x * 9 / 5; },
         'D': function(x) { return (373.15 - x) * 3 / 2; },
         'N': function(x) { return (x - 273.15) * 33 / 100; },
@@ -31,6 +34,7 @@
         'K': function(x) { return x + 273.15; },
         'C': function(x) { return x; },
         'F': function(x) { return x * 9 / 5 + 32; },
+        'Fe': function(x) { return x * 7 / 5 + 16; },
         'R': function(x) { return (x + 273.15) * 9 / 5; },
         'D': function(x) { return (100 - x) * 3 / 2; },
         'N': function(x) { return x * 33 / 100; },
@@ -46,11 +50,28 @@
         'K': function(x) { return (x + 459.67) * 5 / 9; },
         'C': function(x) { return (x - 32) * 5 / 9; },
         'F': function(x) { return x; },
+        'Fe': function(x) { return x * 7 / 9 - 80 / 9; },
         'R': function(x) { return x + 459.67; },
         'D': function(x) { return (212 - x) * 5 / 6; },
         'N': function(x) { return (x - 32) * 11 / 60; },
         'Re': function(x) { return (x - 32) * 4 / 9; },
         'Ro': function(x) { return (x - 32) * 7 / 24 + 7.5; }
+      }
+    },
+    'Fe': {
+      'id': 'Fe',
+      'name': 'Felsius',
+      'sign': '°⋲',
+      'to': {
+        'K': function(x) { return (x + 366.41) * 4 / 11; },
+        'C': function(x) { return (x - 16) * 5 / 7; },
+        'F': function(x) { return x * 9 / 7 + 80 / 7; },
+        'Fe': function(x) { return x; },
+        'R': function(x) { return (x - 475.67) * 5 / 7; },
+        'D': function(x) { return (163.33 - x) * 6 / 7; },
+        'N': function(x) { return (x * 15 + 44) * 20 / 77; },
+        'Re': function(x) { return x * 45 / 28 + 80 / 7; },
+        'Ro': function(x) { return (x - 17 / 6) * 120 / 49; }
       }
     },
     'R': {
@@ -61,6 +82,7 @@
         'K': function(x) { return x * 5 / 9; },
         'C': function(x) { return (x - 491.67) * 5 / 9; },
         'F': function(x) { return x - 459.67; },
+        'Fe': function(x) { return x * 7 / 5 + 475.67; },
         'R': function(x) { return x; },
         'D': function(x) { return (671.67 - x) * 5 / 6; },
         'N': function(x) { return (x - 491.67) * 11 / 60; },
@@ -76,6 +98,7 @@
         'K': function(x) { return 373.15 - x * 2 / 3; },
         'C': function(x) { return 100 - x * 2 / 3; },
         'F': function(x) { return 212 - x * 6 / 5; },
+        'Fe': function(x) { return 163.33 - x * 7 / 6; },
         'R': function(x) { return 671.67 - x * 6 / 5; },
         'D': function(x) { return x; },
         'N': function(x) { return 33 - x * 11 / 50; },
@@ -91,6 +114,7 @@
         'K': function(x) { return x * 100 / 33 + 273.15; },
         'C': function(x) { return x * 100 / 33; },
         'F': function(x) { return x * 60 / 11 + 32; },
+        'Fe': function(x) { return x * 77 / 300 - 44 / 15; },
         'R': function(x) { return x * 60 / 11 + 491.67; },
         'D': function(x) { return (33 - x) * 50 / 11; },
         'N': function(x) { return x; },
@@ -106,6 +130,7 @@
         'K': function(x) { return x * 5 / 4 + 273.15; },
         'C': function(x) { return x * 5 / 4; },
         'F': function(x) { return x * 9 / 4 + 32; },
+        'Fe': function(x) { return x * 28 / 45 - 64 / 9; },
         'R': function(x) { return x * 9 / 4 + 491.67; },
         'D': function(x) { return (80 - x) * 15 / 8; },
         'N': function(x) { return x * 33 / 80; },
@@ -121,6 +146,7 @@
         'K': function(x) { return (x - 7.5) * 40 / 21 + 273.15; },
         'C': function(x) { return (x - 7.5) * 40 / 21; },
         'F': function(x) { return (x - 7.5) * 24 / 7 + 32; },
+        'Fe': function(x) { return x * 49 / 120 + 17 / 6; },
         'R': function(x) { return (x - 7.5) * 24 / 7 + 491.67; },
         'D': function(x) { return (60 - x) * 20 / 7; },
         'N': function(x) { return (x - 7.5) * 22 / 35; },

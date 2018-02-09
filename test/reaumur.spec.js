@@ -86,7 +86,7 @@ describe('reaumur', function() {
       expect( Object.prototype.toString.call(reaumur.getScaleIDs()) ).toBe('[object Array]');
     });
     it('valid parameters', function() {
-      expect( reaumur.getScaleIDs().length ).toBe(8);
+      expect( reaumur.getScaleIDs().length ).toBe(9);
     });
 
   });
